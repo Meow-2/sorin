@@ -57,15 +57,15 @@ if (( ${+functions[git-info]} )); then
   # Set git-info parameters.
   zstyle ':zim:git-info' verbose yes
   zstyle ':zim:git-info:action' format '%F{7}:%F{9}%s'
-  zstyle ':zim:git-info:ahead' format ' %F{13}⬆'
-  zstyle ':zim:git-info:behind' format ' %F{13}⬇'
+  zstyle ':zim:git-info:ahead' format ' %F{13}↑'
+  zstyle ':zim:git-info:behind' format ' %F{13}↓'
   zstyle ':zim:git-info:branch' format ' %F{2}%b'
   zstyle ':zim:git-info:commit' format ' %F{3}%c'
   zstyle ':zim:git-info:indexed' format ' %F{2}✚'
   zstyle ':zim:git-info:unindexed' format ' %F{4}✱'
   zstyle ':zim:git-info:position' format ' %F{13}%p'
-  zstyle ':zim:git-info:stashed' format ' %F{6}✭'
-  zstyle ':zim:git-info:untracked' format ' %F{7}◼'
+  zstyle ':zim:git-info:stashed' format ' %F{6}'
+  zstyle ':zim:git-info:untracked' format ' %F{7}'
   zstyle ':zim:git-info:keys' format \
     'status' '%%B$(coalesce "%b" "%p" "%c")%s%A%B%S%i%I%u%f%%b'
 
